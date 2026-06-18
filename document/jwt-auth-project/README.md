@@ -11,16 +11,8 @@ A full-stack JWT authentication system demonstrating **Access Token** and **Refr
 
 ## Project Location
 
-Place this folder in your system **Documents** directory:
-
 ```
-~/Documents/jwt-auth-project
-```
-
-Example on Linux (same as your file manager **Home / Documents**):
-
-```bash
-cp -r /path/to/repo/document/jwt-auth-project ~/Documents/
+/home/hello-moni/Documents/jwt-auth-project
 ```
 
 ## Project Structure
@@ -68,7 +60,7 @@ cp -r /path/to/repo/document/jwt-auth-project ~/Documents/
 ### 1. Clone and navigate to the project
 
 ```bash
-cd ~/Documents/jwt-auth-project
+cd /home/hello-moni/Documents/jwt-auth-project
 ```
 
 ### 2. Backend Setup
@@ -114,13 +106,13 @@ Open two terminal windows:
 
 **Terminal 1 — Backend:**
 ```bash
-cd ~/Documents/jwt-auth-project/backend
+cd /home/hello-moni/Documents/jwt-auth-project/backend
 npm run dev
 ```
 
 **Terminal 2 — Frontend:**
 ```bash
-cd ~/Documents/jwt-auth-project/frontend
+cd /home/hello-moni/Documents/jwt-auth-project/frontend
 npm run dev
 ```
 
