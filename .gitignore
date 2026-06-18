@@ -2,6 +2,9 @@
 /dist
 /node_modules
 /build
+/document/jwt-auth-project/backend/node_modules
+/document/jwt-auth-project/frontend/node_modules
+/document/jwt-auth-project/frontend/dist
 .gitlab-ci.yml
 package-lock.json
 

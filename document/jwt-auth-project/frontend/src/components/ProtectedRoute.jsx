@@ -1,0 +1,26 @@
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext.jsx';
+
+/**
+ * ProtectedRoute
+ * Redirects unauthenticated users to the login page.
+ */
+const ProtectedRoute = ({ children }) => {
+  const { isAuthenticated, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return children;
+};
+
+export default ProtectedRoute;
