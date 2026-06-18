@@ -12,34 +12,35 @@ A full-stack JWT authentication system demonstrating **Access Token** and **Refr
 ## Project Structure
 
 ```
-backend/
-├── src/
-│   ├── controllers/     # Request handlers (register, login, refresh, logout, profile)
-│   ├── routes/          # Express route definitions
-│   ├── middleware/      # Auth middleware & error handler
-│   ├── models/          # Mongoose User model
-│   ├── services/        # Business logic layer
-│   ├── utils/           # JWT token helpers & cookie options
-│   ├── config/          # Database connection
-│   └── app.js           # Express app setup
-├── .env                 # Environment variables (not committed)
-├── .env.example         # Environment template
-├── server.js            # Entry point
-└── package.json
-
-frontend/
-├── src/
-│   ├── api/
-│   │   └── axios.js     # Axios instance with request/response interceptors
-│   ├── pages/           # Login, Register, Dashboard
-│   ├── components/      # ProtectedRoute, PublicRoute
-│   ├── context/         # AuthContext (global auth state)
-│   ├── routes/          # React Router setup
-│   ├── services/        # API service functions
-│   └── App.jsx          # Root component
-├── .env                 # Environment variables (not committed)
-├── .env.example         # Environment template
-└── package.json
+jwt-auth-project/
+├── README.md            # Project documentation
+├── backend/
+│   ├── src/
+│   │   ├── controllers/     # Request handlers (register, login, refresh, logout, profile)
+│   │   ├── routes/          # Express route definitions
+│   │   ├── middleware/      # Auth middleware & error handler
+│   │   ├── models/          # Mongoose User model
+│   │   ├── services/        # Business logic layer
+│   │   ├── utils/           # JWT token helpers & cookie options
+│   │   ├── config/          # Database connection
+│   │   └── app.js           # Express app setup
+│   ├── .env                 # Environment variables (not committed)
+│   ├── .env.example         # Environment template
+│   ├── server.js            # Entry point
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── api/
+    │   │   └── axios.js     # Axios instance with request/response interceptors
+    │   ├── pages/           # Login, Register, Dashboard
+    │   ├── components/      # ProtectedRoute, PublicRoute
+    │   ├── context/         # AuthContext (global auth state)
+    │   ├── routes/          # React Router setup
+    │   ├── services/        # API service functions
+    │   └── App.jsx          # Root component
+    ├── .env                 # Environment variables (not committed)
+    ├── .env.example         # Environment template
+    └── package.json
 ```
 
 ## Prerequisites
@@ -53,7 +54,7 @@ frontend/
 ### 1. Clone and navigate to the project
 
 ```bash
-cd /path/to/project
+cd /path/to/project/jwt-auth-project
 ```
 
 ### 2. Backend Setup
@@ -99,13 +100,13 @@ Open two terminal windows:
 
 **Terminal 1 — Backend:**
 ```bash
-cd backend
+cd jwt-auth-project/backend
 npm run dev
 ```
 
 **Terminal 2 — Frontend:**
 ```bash
-cd frontend
+cd jwt-auth-project/frontend
 npm run dev
 ```
 

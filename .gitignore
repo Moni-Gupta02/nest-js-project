@@ -4,6 +4,9 @@
 /backend/node_modules
 /frontend/node_modules
 /frontend/dist
+/jwt-auth-project/backend/node_modules
+/jwt-auth-project/frontend/node_modules
+/jwt-auth-project/frontend/dist
 /build
 .gitlab-ci.yml
 package-lock.json
